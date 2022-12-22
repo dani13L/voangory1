@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191919"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/pan_pid"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rectangle_maintso">
+
+        <TextView
+            android:id="@+id/txt_pid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="PID"
+            android:textColor="#09AB63" />
+
+        <RelativeLayout
+            android:id="@+id/kp_pan"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/txt_pid"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rectangle_maintso">
+
+            <TextView
+                android:id="@+id/text_kd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="KD"
+                android:textColor="#09AB63" />
+
+            <EditText
+                android:id="@+id/value_kd"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_kd"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/kd_pan"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/txt_pid"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/kp_pan"
+            android:background="@drawable/rectangle_maintso">
+
+            <TextView
+                android:id="@+id/text_kp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="KD"
+                android:textColor="#09AB63" />
+
+            <EditText
+                android:id="@+id/value_kp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_kp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_validpid"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/rectbombe"
+            android:text="OK"
+            android:textColor="#09AB63" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pan_vitesse"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/pan_pid"
+        android:background="@drawable/rectangle_maintso">
+
+        <TextView
+            android:id="@+id/txt_vitesse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Vitesse"
+            android:textColor="#09AB63" />
+
+        <RelativeLayout
+            android:id="@+id/vmin_pan"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/txt_vitesse"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rectangle_maintso">
+
+            <TextView
+                android:id="@+id/text_vmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="vmin"
+                android:textColor="#09AB63" />
+
+            <EditText
+                android:id="@+id/value_vmin"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_vmin"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/vmax_pan"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/txt_vitesse"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/vmin_pan"
+            android:background="@drawable/rectangle_maintso">
+
+            <TextView
+                android:id="@+id/text_vmax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="vmax"
+                android:textColor="#09AB63" />
+
+            <EditText
+                android:id="@+id/value_vmax"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_vmax"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_validvitesse"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/rectbombe"
+            android:text="OK"
+            android:textColor="#09AB63" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/pan_vitesse"
+        android:background="@drawable/rectangle_maintso">
+
+
+        <TextView
+            android:id="@+id/txt_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Mode"
+            android:textColor="#09AB63" />
+
+        <Spinner
+            android:id="@+id/spinner_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_mode"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/panConnexion"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/connect_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/nonconnecte"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/txt_staut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/connect_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:text="Non connecté"
+            android:textColor="#FF0000" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_calibre"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pan_pid"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectbombe"
+        android:text="NO cal"
+        android:textColor="#FF0000"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/btn_mdroite"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pan_pid"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@+id/btn_mgauche"
+        android:background="@drawable/right" />
+
+    <Button
+        android:id="@+id/btn_mgauche"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pan_pid"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/left" />
+
+    <!-- Boutonn reculer arrière -->
+    <Button
+        android:id="@+id/btn_mdroite_recule"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/btn_mdroite"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/btn_mgauche"
+        android:background="@drawable/rectangle_maintso"
+        android:text="avant"
+        android:textColor="@color/white"
+        android:textSize="10dp" />
+
+
+    <Button
+        android:id="@+id/btn_avancer"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/panConnexion"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rectbombe"
+        android:text="avancer"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_reculer"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/panConnexion"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/btn_avancer"
+        android:background="@drawable/rectbombe"
+        android:text="RECULER"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_vitessup"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/pan_pid"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/vitessup" />
+    <Button
+        android:id="@+id/btn_vitessdown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/btn_vitessup"
+        android:layout_marginLeft="30dp"
+       android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/vitessedown" />
+
+
+    <RelativeLayout
+        android:id="@+id/panvuevitess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_vitessdown"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/lab_vitesse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:textColor="#09AB63"
+            android:textSize="15dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/lab_vitesse"
+            android:layout_centerInParent="true"
+            android:outlineSpotShadowColor="@color/white"
+            android:progress="50" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
